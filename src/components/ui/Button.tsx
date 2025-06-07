@@ -50,6 +50,8 @@ const styles = StyleSheet.create({
   },
   default: {
     backgroundColor: colors.primary,
+    height: 40,
+    paddingHorizontal: spacing.md,
   },
   destructive: {
     backgroundColor: colors.destructive,
@@ -70,6 +72,7 @@ const styles = StyleSheet.create({
   },
   defaultText: {
     color: colors.primaryForeground,
+    ...typography.sm,
   },
   destructiveText: {
     color: colors.destructiveForeground,
@@ -87,10 +90,6 @@ const styles = StyleSheet.create({
     color: colors.primary,
     textDecorationLine: 'underline',
   },
-  default: {
-    height: 40,
-    paddingHorizontal: spacing.md,
-  },
   sm: {
     height: 36,
     paddingHorizontal: spacing.sm,
@@ -106,9 +105,6 @@ const styles = StyleSheet.create({
   text: {
     ...typography.sm,
     fontWeight: '500',
-  },
-  defaultText: {
-    ...typography.sm,
   },
   smText: {
     ...typography.xs,
